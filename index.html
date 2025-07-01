@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavithra Bhemiredde - Software Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .hero-shape {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 50%, #C084FC 100%);
+            clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+        }
+        .skill-bar {
+            height: 8px;
+            background: linear-gradient(90deg, #8B5CF6, #A855F7);
+            border-radius: 4px;
+            transition: width 1s ease-in-out;
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .section-spacing {
+            padding: 4rem 0;
+        }
+        @media print {
+            .section-spacing {
+                padding: 2rem 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-2xl font-bold text-purple-600">Pavithra</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-purple-600 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 transition-colors">About</a>
+                    <a href="#skills" class="text-gray-700 hover:text-purple-600 transition-colors">Skills</a>
+                    <a href="#projects" class="text-gray-700 hover:text-purple-600 transition-colors">Projects</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center overflow-hidden">
+        <div class="hero-shape"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="relative z-10">
+                    <div class="mb-6">
+                        <i class="fas fa-code text-purple-600 text-3xl mb-4"></i>
+                        <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
+                            Software Developer
+                        </h1>
+                    </div>
+                    <h2 class="text-3xl lg:text-4xl font-semibold text-gray-800 mb-6">
+                        Pavithra Bhemiredde
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                        Passionate technologist and pre-final year B.Tech student with a strong foundation in software development and a passion for building scalable, real-time applications.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-purple-600 text-white px-8 py-3 rounded-lg hover:bg-purple-700 transition-colors">
+                            Get In Touch
+                        </a>
+                        <a href="#projects" class="border border-purple-600 text-purple-600 px-8 py-3 rounded-lg hover:bg-purple-50 transition-colors">
+                            View Work
+                        </a>
+                    </div>
+                </div>
+                <div class="relative z-10 flex justify-center lg:justify-end">
+                    <div class="w-80 h-80 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center shadow-2xl">
+                        <i class="fas fa-user-graduate text-white text-6xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-spacing bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+                <p class="text-xl text-gray-600">Get to know more about my background and journey</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Background</h3>
+                    <p class="text-gray-600 mb-6">
+                        I am a passionate technologist and pre-final year B.Tech student with a strong foundation in software development. 
+                        I specialize in building scalable, real-time applications and turning innovative ideas into functional solutions.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        With proven strengths in teamwork, problem-solving, and system design, I am proficient in modern tech stacks 
+                        and eager to contribute as a software engineering professional.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Location</h4>
+                            <p class="text-gray-600"><i class="fas fa-map-marker-alt mr-2"></i>Hyderabad, India</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Languages</h4>
+                            <p class="text-gray-600">English, Telugu (Native), Hindi</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Education</h3>
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-purple-600 pl-6">
+                            <h4 class="font-semibold text-gray-900">Bachelor of Technology (B.Tech)</h4>
+                            <p class="text-purple-600 font-medium">Joy University</p>
+                            <p class="text-gray-600">12/2022 - Present</p>
+                            <p class="text-gray-600">CGPA: 9.33/10.0 | SGPA: 9.86/10.0</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-purple-400 pl-6">
+                            <h4 class="font-semibold text-gray-900">Intermediate Education</h4>
+                            <p class="text-purple-600 font-medium">Narayana Junior College</p>
+                            <p class="text-gray-600">07/2020 - 08/2022</p>
+                            <p class="text-gray-600">Graduated with distinction, scored 933/1000</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-purple-300 pl-6">
+                            <h4 class="font-semibold text-gray-900">Secondary Education (SSC)</h4>
+                            <p class="text-purple-600 font-medium">Narayana Group of Schools</p>
+                            <p class="text-gray-600">06/2015 - 05/2020</p>
+                            <p class="text-gray-600">Graduated with distinction, scored 10.0/10.0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-spacing bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Skills & Expertise</h2>
+                <p class="text-xl text-gray-600">Technologies and tools I work with</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Front-End & Back-End -->
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-6 text-center">Front-End & Back-End</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-gray-700">HTML</span>
+                                <span class="text-sm text-purple-600">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-gray-700">CSS</span>
+                                <span class="text-sm text-purple-600">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-gray-700">JavaScript</span>
+                                <span class="text-sm text-purple-600">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-gray-700">React JS</span>
+                                <span class="text-sm text-purple-600">65%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar h-2 rounded-full" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-gray-700">PHP</span>
+                                <span class="text-sm text-purple-600">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database & Programming -->
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-6 text-center">Database & Programming</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-gray-700">Python</span>
+                                <span class="text-sm text-purple-600">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-gray-700">Java</span>
+                                <span class="text-sm text-purple-600">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-gray-700">MySQL</span>
+                                <span class="text-sm text-purple-600">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-gray-700">C</span>
+                                <span class="text-sm text-purple-600">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-gray-700">MongoDB</span>
+                                <span class="text-sm text-purple-600">70%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar h-2 rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development Tools -->
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-6 text-center">Development Tools</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-gray-700">VS Code</span>
+                                <span class="text-sm text-purple-600">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-gray-700">GitHub</span>
+                                <span class="text-sm text-purple-600">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-gray-700">Bootstrap</span>
+                                <span class="text-sm text-purple-600">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-gray-700">PHPMyAdmin</span>
+                                <span class="text-sm text-purple-600">65%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar h-2 rounded-full" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-gray-700">Figma</span>
+                                <span class="text-sm text-purple-600">60%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar h-2 rounded-full" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Machine Learning -->
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-6 text-center">Machine Learning</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-gray-700">Jupyter Notebook</span>
+                                <span class="text-sm text-purple-600">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-gray-700">TensorFlow</span>
+                                <span class="text-sm text-purple-600">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-gray-700">OpenCV</span>
+                                <span class="text-sm text-purple-600">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-gray-700">NumPy</span>
+                                <span class="text-sm text-purple-600">70%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar h-2 rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm font-medium text-gray-700">Pandas</span>
+                                <span class="text-sm text-purple-600">60%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar h-2 rounded-full" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-8 text-center">Soft Skills</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                    <div class="bg-white p-4 rounded-lg shadow text-center">
+                        <i class="fas fa-users text-purple-600 text-2xl mb-2"></i>
+                        <p class="text-sm font-medium">Teamwork</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow text-center">
+                        <i class="fas fa-crown text-purple-600 text-2xl mb-2"></i>
+                        <p class="text-sm font-medium">Leadership</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow text-center">
+                        <i class="fas fa-comments text-purple-600 text-2xl mb-2"></i>
+                        <p class="text-sm font-medium">Communication</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow text-center">
+                        <i class="fas fa-bolt text-purple-600 text-2xl mb-2"></i>
+                        <p class="text-sm font-medium">Fast Learner</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow text-center">
+                        <i class="fas fa-clock text-purple-600 text-2xl mb-2"></i>
+                        <p class="text-sm font-medium">Time Management</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow text-center">
+                        <i class="fas fa-laptop-code text-purple-600 text-2xl mb-2"></i>
+                        <p class="text-sm font-medium">Computer Skills</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-spacing bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Projects & Experience</h2>
+                <p class="text-xl text-gray-600">Some of my recent work and internships</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+                <!-- Projects -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Featured Projects</h3>
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 p-6 rounded-xl card-hover">
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-purple-100 p-3 rounded-lg">
+                                    <i class="fas fa-globe text-purple-600 text-xl"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-xl font-semibold text-gray-900 mb-2">Personal Portfolio Website</h4>
+                                    <p class="text-gray-600 mb-4">
+                                        Designed and developed a personal portfolio website using JavaScript to showcase projects and skills. 
+                                        Implemented responsive design principles to ensure compatibility across various devices and screen sizes.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">HTML</span>
+                                        <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">CSS</span>
+                                        <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">JavaScript</span>
+                                        <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Responsive Design</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-xl card-hover">
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-purple-100 p-3 rounded-lg">
+                                    <i class="fas fa-brain text-purple-600 text-xl"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-xl font-semibold text-gray-900 mb-2">AI-Based Data Augmentation for Small Datasets</h4>
+                                    <p class="text-gray-600 mb-4">
+                                        Researched and implemented data augmentation techniques to enhance model performance on small datasets. 
+                                        Focused on improving machine learning model accuracy through advanced data processing methods.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Python</span>
+                                        <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">TensorFlow</span>
+                                        <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Machine Learning</span>
+                                        <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Image Processing</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Internships -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Professional Experience</h3>
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 p-6 rounded-xl card-hover">
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-blue-100 p-3 rounded-lg">
+                                    <i class="fab fa-ibm text-blue-600 text-xl"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-xl font-semibold text-gray-900 mb-2">IBM SkillBuild Summer Internship</h4>
+                                    <p class="text-gray-600 mb-4">
+                                        Successfully completed a 6-week internship focusing on front-end web development. 
+                                        Gained hands-on experience in designing responsive user interfaces using HTML, CSS, and JavaScript.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Front-End Development</span>
+                                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">HTML/CSS</span>
+                                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">JavaScript</span>
+                                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">UI Design</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-xl card-hover">
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-green-100 p-3 rounded-lg">
+                                    <i class="fas fa-rocket text-green-600 text-xl"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-xl font-semibold text-gray-900 mb-2">Agnirva.com Space Internship</h4>
+                                    <p class="text-gray-600 mb-4">
+                                        Completed a space community internship program integrated with ISRO. 
+                                        Integrated AI into space projects for automated data collection and analysis, 
+                                        contributing to innovative research methodologies in space exploration.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Space Technology</span>
+                                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">AI Integration</span>
+                                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Data Analysis</span>
+                                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Research</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Extra-Curricular Activities -->
+            <div class="bg-purple-50 p-8 rounded-xl">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-6 text-center">Leadership & Activities</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="text-center">
+                        <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-trophy text-purple-600 text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-900 mb-2">Event President</h4>
+                        <p class="text-gray-600">
+                            Organized SECURE TECH FEST DAY, fostering a collaborative and competitive environment. 
+                            Mentored junior members on coding practices and cybersecurity awareness.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-heart text-purple-600 text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-900 mb-2">Hobbies & Interests</h4>
+                        <p class="text-gray-600">
+                            Passionate about coding and experimenting with new technologies. 
+                            Enjoy exploring nature trails and engaging in outdoor activities for work-life balance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Contact Section -->
+<section id="contact" class="py-20 px-4 bg-gradient-to-br from-purple-600 to-indigo-700 text-white">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold mb-2">Get In Touch</h2>
+      <p class="text-purple-200">Let's discuss opportunities and collaborations</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+        <ul class="space-y-6 text-lg">
+          <li class="flex items-center space-x-4">
+            <i class="fas fa-envelope text-white text-xl"></i>
+            <a href="mailto:pavithrabhemiredde1221@gmail.com" class="hover:underline">
+              pavithrabhemiredde1221@gmail.com
+            </a>
+          </li>
+          <li class="flex items-center space-x-4">
+            <i class="fas fa-phone text-white text-xl"></i>
+            <a href="tel:+919063066206" class="hover:underline">
+              +91 9063066206
+            </a>
+          </li>
+          <li class="flex items-center space-x-4">
+            <i class="fas fa-map-marker-alt text-white text-xl"></i>
+            <span>Hyderabad, India</span>
+          </li>
+          <li class="flex items-center space-x-4">
+            <i class="fab fa-linkedin text-white text-xl"></i>
+            <a href="https://www.linkedin.com/in/pavithra-bhemireddede-979b9b318" target="_blank" class="hover:underline">
+              pavithra-bhemireddede-979b9b318
+            </a>
+          </li>
+        </ul>
+
+        <div class="mt-8">
+          <h4 class="font-medium mb-4">Available for:</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-4 py-2 bg-white/20 rounded-full text-sm">Internships</span>
+            <span class="px-4 py-2 bg-white/20 rounded-full text-sm">Freelance Projects</span>
+            <span class="px-4 py-2 bg-white/20 rounded-full text-sm">Full-Time Roles</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+<div class="w-full bg-white/10 backdrop-blur-md p-6 md:p-8 rounded-xl shadow-lg">
+  <h3 class="text-2xl font-semibold text-white mb-6">Send a Message</h3>
+ <form action="https://formspree.io/f/mwkgeqyz" method="POST" class="space-y-6">
+  <div>
+    <label class="block text-white text-sm font-medium mb-2">Name</label>
+    <input name="name" type="text" required placeholder="Your Name"
+      class="w-full px-4 py-3 bg-white text-gray-900 border border-white rounded-lg placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-400" />
+  </div>
+
+  <div>
+    <label class="block text-white text-sm font-medium mb-2">Email</label>
+    <input name="email" type="email" required placeholder="Your Email"
+      class="w-full px-4 py-3 bg-white text-gray-900 border border-white rounded-lg placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-400" />
+  </div>
+
+  <div>
+    <label class="block text-white text-sm font-medium mb-2">Message</label>
+    <textarea name="message" rows="4" required placeholder="Your Message"
+      class="w-full px-4 py-3 bg-white text-gray-900 border border-white rounded-lg placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-400 resize-none"></textarea>
+  </div>
+
+  <button type="submit"
+    class="w-full bg-white text-purple-600 py-3 rounded-lg font-semibold hover:bg-purple-100 transition">
+    Send Message
+  </button>
+</form>
+
+
+
+</div>
+
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-400">
+                    © 2024 Pavithra Bhemiredde. All rights reserved. | 
+                    Passionate about technology and innovation.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animate skill bars on scroll
+        const animateSkillBars = () => {
+            const skillBars = document.querySelectorAll('.skill-bar');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const bar = entry.target;
+                        const width = bar.style.width;
+                        bar.style.width = '0%';
+                        setTimeout(() => {
+                            bar.style.width = width;
+                        }, 100);
+                    }
+                });
+            });
+
+            skillBars.forEach(bar => observer.observe(bar));
+        };
+
+        // Initialize animations
+        document.addEventListener('DOMContentLoaded', () => {
+            animateSkillBars();
+        });
+
+        // Mobile menu toggle (basic implementation)
+        const mobileMenuButton = document.querySelector('.md\\:hidden button');
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', () => {
+                // Simple mobile menu toggle - could be expanded
+                alert('Mobile menu - implement as needed');
+            });
+        }
+    </script>
+</body>
+</html>
