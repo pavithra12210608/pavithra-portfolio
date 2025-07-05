@@ -65,14 +65,3 @@ You can download my resume here:
 📥 **[Click to Download Resume](assets/resume.pdf)**  
 *(Make sure to upload your resume PDF to the `assets/` folder)*
 
----
-
-## 🚀 How to Run Locally
-
-```bash
-git clone https://github.com/pavithra12210608/pavithra-portfolio.git
-cd pavithra-portfolio
-# Open index.html in browser or with Live Server
-
-
-
