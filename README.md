@@ -63,5 +63,4 @@ I’m always open to internships, collaborations, and tech discussions!
 
 You can download my resume here:  
 📥 **[Click to Download Resume](assets/resume.pdf)**  
-*(Make sure to upload your resume PDF to the `assets/` folder)*
 
